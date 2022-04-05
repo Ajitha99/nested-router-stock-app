@@ -1,0 +1,101 @@
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.parent-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+    /* justify-content: center;
+    align-content: center;  */
+    margin-top: 10px;
+    border-radius: .5em;
+    width: 320px;
+    height: 600px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+.stockdata-pdiv{
+    display: flex;
+    flex-direction: column;
+    /* width:300px; */
+    width:320px;
+    height:533px;
+    overflow: auto;
+}
+.stockdata-maindiv{
+    /* display: flex; */
+    display: inline-table;
+    color: white;
+    width:280px;
+    height: 20px;
+    border: 2px solid rgb(48, 47, 47);
+    border-radius: .2em;
+    margin:3px;
+}
+.stockdata-div1{
+    float: left;
+    text-align: left;
+    /* display: inline; */
+    margin-left:10px;
+    line-height: 5px;
+}
+.stockdata-div2{
+    text-align: right;
+    margin-right:10px;
+    /* decreases the space between lines */
+    line-height: 0px;
+}
+
+.stockhome-input{
+ margin-top: 10px;
+ margin-right:5px;
+ width: 180px;
+ height: 25px;
+ border-radius: .5em;   
+ text-align: center;
+ font-weight: bold;
+ color:rgba(255, 255, 255, 0.966);
+ background-color: rgb(48, 47, 47);
+ border: 1px solid white;
+}
+.stockhome-button{
+    margin-top: 10px;
+    margin-left:5px;
+    /* width: 76px; */
+    height: 30px;
+    border-radius: .5em;
+    font-weight: bold;
+    color: black;
+    border: 1px solid white;
+} 
+.stockhome-button:hover{
+    background-color:rgb(122, 121, 121);
+    color: whitesmoke;
+
+}
+.comp-name{
+    width:150px;
+    height:25px;
+    text-align: left;
+    line-height: 10px;
+
+}
+.background-green, .background-red{
+    width:61px;
+    height:24px;
+    border-radius: .4em;
+    font-size: smaller;
+    font-weight:bold;
+}
+.stockdata-maindiv:hover{
+    cursor:pointer;
+}
+.background-green{
+    background-color: rgb(35, 245, 45);
+}
+.background-red{
+    background-color: rgba(194, 53, 34, 0.938);
+}

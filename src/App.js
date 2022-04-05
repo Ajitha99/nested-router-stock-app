@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import {NavLink, Route, Routes} from 'react-router-dom';
+import Home from './screens/Home';
+import StockHome from './screens/StockHome';
+import Stock from './screens/Stock';
+import NotFound from './screens/NotFound';
+import About from './screens/About';
+
+
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='div-nav'>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/stockhome">StockPage</NavLink>
+          <NavLink to = "/about">About</NavLink>
+        </nav>
+      </div>
+      <div className='div-routes'>
+        <Routes>
+          <Route exact path = "/" element = {<Home/>} />
+          <Route path = "/stockhome" element = {<StockHome/>}/>
+          <Route exact path = "/stockhome/:symbol" element = {<Stock/>} />
+          <Route path = "/about" element = {<About />} />
+          <Route path = "*" element = {<NotFound/>} />
+        </Routes>
+        </div>
     </div>
   );
 }

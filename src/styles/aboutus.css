@@ -1,0 +1,17 @@
+
+.ol-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ol li{
+    text-decoration: none;
+    /* list-style: none; */
+    text-align: justify;
+    font-size: large;
+}
+p{
+    text-align: justify;
+    margin:40px;
+    font-size: large;
+}

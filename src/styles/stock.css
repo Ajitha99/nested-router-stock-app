@@ -1,0 +1,48 @@
+
+.main-stock{
+    margin-top:20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.parent-flex{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: .8em;
+}
+/* span{
+    text-align: right;
+} */
+table{
+    border-spacing:0; 
+    border-collapse: collapse; 
+}
+.stock-h5{
+    text-align: left;
+    color:rgb(204, 202, 202);
+}
+.stock-data{
+    text-align: right;
+    padding-left:40px;
+}
+.title-h2{
+    color: rgb(14, 236, 10);
+}
+.heading-td{
+    /* height:40px; */
+    padding-left: 10px;
+}
+.data-td{
+    /* height:40px; */
+    padding-right: 10px;
+}
+tr{
+    padding:5px;
+    height:20px;
+}
+
